@@ -1,0 +1,25 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+}
+
+.karticaTermin{
+    /* position: absolute; */
+    margin-right: auto;
+    margin-left: 5rem;
+}
+
+.karticaUtakmice{
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.karticaPregled{
+    margin-left: auto;
+    margin-right: 5rem;
+}
