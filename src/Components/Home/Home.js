@@ -8,22 +8,45 @@ import goal from './goal.png'
 
 const Home = () => {
     const {data} = useContext(ItemContext);
+    let history = useHistory();
+    
+    const handleTermin = () => {
+        history.push('/termini');
+    }
+
+    const handleUtakmica = () => {
+        history.push('/utakmice');
+    }
+
+    const handlePregled = () => {
+        history.push('/pregled');
+    }
+
 return(
     <div className="home">
-        <div className="karticaTermin">
+        <div className="karticaTermin" onClick={handleTermin}>
             <p>Odigrani termini</p>
             <p>{data.termini}</p>
-            <img src={calendar}></img>
+            <div className="kartica">
+                <img src={calendar} className="slika"></img>
+                <p>Pregled</p>
+            </div>
         </div>
-        <div className="karticaUtakmica">
+        <div className="karticaUtakmica" onClick={handleUtakmica}>
             <p>Odigrani utakmice</p>
             <p>{data.utakmice}</p>
-            <img src={soccer}></img>
+            <div className="kartica">
+                <img src={soccer} className="slika"></img>
+                <p>Pregled</p>
+            </div>
         </div>
-        <div className="karticaPregled">
+        <div className="karticaPregled" onClick={handlePregled}>
             <p>Broj golova</p>
             <p>{data.goloviTotal}</p>
-            <img src={goal}></img>
+            <div className="kartica">
+                <img src={goal} className="slika"></img>
+                <p>Pregled</p>
+            </div>
         </div>
     </div>
 )
