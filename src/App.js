@@ -36,7 +36,7 @@ function App() {
           <Route exact={true} path="/login" render={() =>(
             <Login/>
           )}/>
-          <Route exact={true} path="/login" render={() =>(
+          <Route exact={true} path="/unos" render={() =>(
             <Unos/>
           )}/>
         </ItemContext.Provider>
