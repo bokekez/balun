@@ -6,34 +6,50 @@ import { ItemContext } from '../Context';
 const Unos = () => {
     const [temp1, setTemp1] = useState({
         igrač1: '',
+    });
+    const [temp1G, setTemp1G] = useState({
         igrač1Gol: 0,
     });
     const [temp2, setTemp2] = useState({
         igrač2: '',
+    });
+    const [temp2G, setTemp2G] = useState({
         igrač2Gol: 0,
     });
     const [temp3, setTemp3] = useState({
         igrač3: '',
+    });
+    const [temp3G, setTemp3G] = useState({
         igrač3Gol: 0,
     });
     const [temp4, setTemp4] = useState({
         igrač4: '',
-        igra4Gol: 0,
+    });
+    const [temp4G, setTemp4G] = useState({
+        igrač4Gol: 0,
     });
     const [temp5, setTemp5] = useState({
         igrač5: '',
+    });
+    const [temp5G, setTemp5G] = useState({
         igrač5Gol: 0,
     });
     const [temp6, setTemp6] = useState({
         igrač6: '',
+    });
+    const [temp6G, setTemp6G] = useState({
         igrač6Gol: 0,
     });
     const [temp7, setTemp7] = useState({
         igrač7: '',
+    });
+    const [temp7G, setTemp7G] = useState({
         igrač7Gol: 0,
     });
     const [temp8, setTemp8] = useState({
         igrač8: '',
+    });
+    const [temp8G, setTemp8G] = useState({
         igrač8Gol: 0,
     });
     const [ termin, setTermin] = useState({});
@@ -63,51 +79,69 @@ const Unos = () => {
         setTemp8({igrač8: e.target.value});
     }
     const handleChange1G = (e) => {
-        setTemp1({igrač1Gol: e.target.value});
+        setTemp1G({igrač1Gol: e.target.value});
     }
     const handleChange2G = (e) => {
-        setTemp2({igrač2Gol: e.target.value});
+        setTemp2G({igrač2Gol: e.target.value});
     }
     const handleChange3G = (e) => {
-        setTemp3({igrač3Gol: e.target.value});
+        setTemp3G({igrač3Gol: e.target.value});
     }
     const handleChange4G = (e) => {
-        setTemp4({igrač4Gol: e.target.value});
+        setTemp4G({igrač4Gol: e.target.value});
     }
     const handleChange5G = (e) => {
-        setTemp5({igrač5Gol: e.target.value});
+        setTemp5G({igrač5Gol: e.target.value});
     }
     const handleChange6G = (e) => {
-        setTemp6({igrač6Gol: e.target.value});
+        setTemp6G({igrač6Gol: e.target.value});
     }
     const handleChange7g = (e) => {
-        setTemp7({igrač7Gol: e.target.value});
+        setTemp7G({igrač7Gol: e.target.value});
     }
     const handleChange8G = (e) => {
-        setTemp8({igrač8Gol: e.target.value});
+        setTemp8G({igrač8Gol: e.target.value});
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const holder = {
+        // const holder = {
+        //     igrač1: temp1.igrač1,
+        //     igrač1Gol: temp1G.igrač1Gol,
+        //     igrač2: temp2.igrač2,
+        //     igrač2Gol: temp2G.igrač2Gol,
+        //     igrač3: temp3.igrač3,
+        //     igrač3Gol: temp3G.igrač3Gol,
+        //     igrač4: temp4.igrač4,
+        //     igra4Gol: temp4G.igrač4Gol,
+        //     igrač5: temp5.igrač5,
+        //     igrač5Gol: temp5G.igrač5Gol,
+        //     igrač6: temp6.igrač6,
+        //     igrač6Gol: temp6G.igrač6Gol,
+        //     igrač7: temp7.igrač7,
+        //     igrač7Gol: temp7G.igrač7Gol,
+        //     igrač8: temp8.igrač8,
+        //     igrač8Gol: temp8G.igrač8Gol,
+        // }
+        // setTermin({holder})
+        setTermin({
             igrač1: temp1.igrač1,
-            igrač1Gol: temp1.igrač1Gol,
+            igrač1Gol: temp1G.igrač1Gol,
             igrač2: temp2.igrač2,
-            igrač2Gol: temp2.igrač2Gol,
+            igrač2Gol: temp2G.igrač2Gol,
             igrač3: temp3.igrač3,
-            igrač3Gol: temp3.igrač3Gol,
+            igrač3Gol: temp3G.igrač3Gol,
             igrač4: temp4.igrač4,
-            igra4Gol: temp4.igrač4Gol,
+            igra4Gol: temp4G.igrač4Gol,
             igrač5: temp5.igrač5,
-            igrač5Gol: temp5.igrač5Gol,
+            igrač5Gol: temp5G.igrač5Gol,
             igrač6: temp6.igrač6,
-            igrač6Gol: temp6.igrač6Gol,
+            igrač6Gol: temp6G.igrač6Gol,
             igrač7: temp7.igrač7,
-            igrač7Gol: temp7.igrač7Gol,
+            igrač7Gol: temp7G.igrač7Gol,
             igrač8: temp8.igrač8,
-            igrač8Gol: temp8.igrač8Gol,
-        }
-        setTermin({holder})
+            igrač8Gol: temp8G.igrač8Gol,
+        });
     }
     //console.log(temp);
     console.log('1', termin);
