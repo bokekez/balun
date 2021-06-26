@@ -10,6 +10,25 @@ const Home = () => {
     const {data} = useContext(ItemContext);
     let history = useHistory();
     
+    useEffect(() => {
+        fetch('http://localhost:3000/', {
+            method: 'get',
+            headers: {'Content-Type': 'application/json, charset=UTF-8',
+                        'Accept': 'application/json, text/html'}
+            })
+            .then(response => response.json())
+            .then(response => {
+                const temp = response.map(member => ({
+                    'id': member.id,
+                    'termin': member.termin,
+                    "igrač1": member.igrač1,
+                    "igrač1G": member.igrač1G
+                }))
+                console.log(temp);
+            })
+            
+    }, [])
+
     const handleTermin = () => {
         history.push('/termini');
     }
