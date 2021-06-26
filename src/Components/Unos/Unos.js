@@ -124,7 +124,6 @@ const Unos = () => {
         //     igrač8Gol: temp8G.igrač8Gol,
         // }
         // setTermin({holder})
-<<<<<<< HEAD
         // setTermin({
         //     igrač1: temp1.igrač1,
         //     igrač1Gol: temp1G.igrač1Gol,
@@ -166,26 +165,6 @@ const Unos = () => {
                 })
                 //.then(resopnse => resopnse.json())
             })   
-=======
-        setTermin({
-            igrač1: temp1.igrač1,
-            igrač1Gol: temp1G.igrač1Gol,
-            igrač2: temp2.igrač2,
-            igrač2Gol: temp2G.igrač2Gol,
-            igrač3: temp3.igrač3,
-            igrač3Gol: temp3G.igrač3Gol,
-            igrač4: temp4.igrač4,
-            igra4Gol: temp4G.igrač4Gol,
-            igrač5: temp5.igrač5,
-            igrač5Gol: temp5G.igrač5Gol,
-            igrač6: temp6.igrač6,
-            igrač6Gol: temp6G.igrač6Gol,
-            igrač7: temp7.igrač7,
-            igrač7Gol: temp7G.igrač7Gol,
-            igrač8: temp8.igrač8,
-            igrač8Gol: temp8G.igrač8Gol,
-        });
->>>>>>> af4ae4530c94f9629442a168fe1e842169fa0243
     }
     //console.log(temp);
     console.log('1', termin);
